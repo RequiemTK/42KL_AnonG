@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anong <anong@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/09 17:22:57 by anong             #+#    #+#             */
-/*   Updated: 2025/04/10 11:23:33 by anong            ###   ########.fr       */
+/*   Created: 2025/04/10 11:25:01 by anong             #+#    #+#             */
+/*   Updated: 2025/04/10 11:27:10 by anong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_numbers(void)
 {
-	write(1, &c, 1);
+	write(1, "0123456789", 10);
 }
 
 int	main(void)
 {
-	ft_putchar('r');
+	ft_print_numbers();
 	return (0);
 }
